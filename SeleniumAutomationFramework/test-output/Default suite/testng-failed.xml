@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Com.Salesforce.test.tests.AutomationScripts">
+        <methods>
+          <include name="creatNewview11"/>
+          <include name="createnewOppourtunity16"/>
+          <include name="mycontactView28"/>
+          <include name="loginwithvalidCredentials02"/>
+          <include name="wrongCredential4B"/>
+          <include name="tearDown"/>
+          <include name="creatanAccount10"/>
+          <include name="viewContactPage29"/>
+          <include name="stuckoppoReport18"/>
+          <include name="verifyTabcustamization35"/>
+          <include name="creatReport14"/>
+          <include name="newViewerrormessage30"/>
+          <include name="SelectMyProfileoptionusermenudropdown06"/>
+          <include name="leadSelectView21"/>
+          <include name="createNewContact25"/>
+          <include name="selectDeveloperConsole08"/>
+          <include name="setupBeforeTest"/>
+          <include name="createEditView12"/>
+          <include name="loginErrorMessage01"/>
+          <include name="createNewcontactView26"/>
+          <include name="quaterlySummeryReport19"/>
+          <include name="mySettingfomUserMenu07"/>
+          <include name="oppourtunitiesDropDown15"/>
+          <include name="checkNewbuttonLeadspage24"/>
+          <include name="checkLeadsTab20"/>
+          <include name="forgotPassword4A"/>
+          <include name="blockinganEventCalender36"/>
+          <include name="verifyfnameLnameofuser33"/>
+          <include name="checkRecentlyCreatedView27"/>
+          <include name="logoutFromSalesForce09"/>
+          <include name="selectUsermenuDropDown05"/>
+          <include name="teardownAfterTest"/>
+          <include name="setUp"/>
+          <include name="todaysLead23"/>
+          <include name="checkCanecelbuttonCreatenewView31"/>
+          <include name="checkRememberMe03"/>
+          <include name="defaultView22"/>
+          <include name="OppoPipelineReport17"/>
+          <include name="mergeAccounts13"/>
+          <include name="verifyeditLastnameofuser34"/>
+          <include name="checkSaveNewbuttonContact32"/>
+        </methods>
+      </class> <!-- Com.Salesforce.test.tests.AutomationScripts -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

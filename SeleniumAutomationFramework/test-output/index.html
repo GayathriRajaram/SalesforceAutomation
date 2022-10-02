@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite1" class="navigator-link">
+              <span class="suite-name border-failed">Suite1</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite1" class="navigator-link ">
+                    <span>C:\Users\Gayathri\eclipse-workspace\SeleniumAutomationFramework\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite1" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite1" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite1" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite1" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite1" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite1" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods failed suite-Suite1"> (hide)</a> <!-- hide-methods failed suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods failed suite-Suite1"> (show)</a> <!-- show-methods failed suite-Suite1 -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite1">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="Com.Salesforce.test.tests.AutomationScripts" class="method navigator-link" hash-for-method="creatNewview11">creatNewview11</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite1 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite1" class="panel Suite1">
+          <div class="suite-Suite1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Com.Salesforce.test.tests.AutomationScripts</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="creatNewview11">
+                  </a> <!-- creatNewview11 -->
+                  <span class="method-name">creatNewview11</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: unhandled inspector error: {&quot;code&quot;:-32000,&quot;message&quot;:&quot;Cannot take screenshot with 0 width.&quot;}
+  (Session info: MicrosoftEdge=105.0.1343.53)
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;LAPTOP-4VH20URH&apos;, ip: &apos;192.168.50.246&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [e853fa44c8e62aeba70b60d0054c5e34, elementScreenshot {id=7af3dee1-c074-4a05-97ec-5f4782ee492e}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 105.0.1343.53, ms:edgeOptions: {debuggerAddress: localhost:63042}, msedge: {msedgedriverVersion: 105.0.1343.53 (3a47f00402d5..., userDataDir: C:\Users\Gayathri\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63042/devtoo..., se:cdpVersion: 105.0.1343.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[[[EdgeDriver: msedge on WINDOWS (e853fa44c8e62aeba70b60d0054c5e34)] -&gt; name: fcf]] -&gt; tag name: option]
+Session ID: e853fa44c8e62aeba70b60d0054c5e34
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.getScreenshotAs(RemoteWebElement.java:391)
+	at Com.Salesforce.test.basetest.BaseTest.TakeScreenShotElement(BaseTest.java:351)
+	at Com.Salesforce.test.tests.AutomationScripts.creatNewview11(AutomationScripts.java:306)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-failed -->
+        </div> <!-- panel Suite1 -->
+        <div panel-name="test-xml-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Gayathri\eclipse-workspace\SeleniumAutomationFramework\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite1&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ChromeRegression&quot;&gt;
+    &lt;parameter name=&quot;browsername&quot; value=&quot;edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Com.Salesforce.test.tests.AutomationScripts&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;creatNewview11&quot;/&gt;
+          &lt;exclude name=&quot;blockinganEventCalender36&quot;/&gt;
+          &lt;exclude name=&quot;logoutFromSalesForce09&quot;/&gt;
+          &lt;exclude name=&quot;loginwithvalidCredentials02&quot;/&gt;
+          &lt;exclude name=&quot;loginErrorMessage01&quot;/&gt;
+          &lt;exclude name=&quot;checkRememberMe03&quot;/&gt;
+          &lt;exclude name=&quot;forgotPassword4A&quot;/&gt;
+          &lt;exclude name=&quot;wrongCredential4B&quot;/&gt;
+          &lt;exclude name=&quot;verifyTabcustamization35&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Com.Salesforce.test.tests.AutomationScripts --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChromeRegression --&gt;
+&lt;/suite&gt; &lt;!-- Suite1 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ChromeRegression (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite1');
+function tableData_Suite1() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'creatNewview11')
+data.setCell(0, 2, 'Com.Salesforce.test.tests.AutomationScripts')
+data.setCell(0, 3, 8728);
+window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <div id="times-div-Suite1">
+              </div> <!-- times-div-Suite1 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">36 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Com.Salesforce.test.tests.AutomationScripts</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">createnewOppourtunity16</span>
+                <br/>
+                <span class="ignored-method-name">mycontactView28</span>
+                <br/>
+                <span class="ignored-method-name">loginwithvalidCredentials02</span>
+                <br/>
+                <span class="ignored-method-name">wrongCredential4B</span>
+                <br/>
+                <span class="ignored-method-name">creatanAccount10</span>
+                <br/>
+                <span class="ignored-method-name">viewContactPage29</span>
+                <br/>
+                <span class="ignored-method-name">stuckoppoReport18</span>
+                <br/>
+                <span class="ignored-method-name">verifyTabcustamization35</span>
+                <br/>
+                <span class="ignored-method-name">creatReport14</span>
+                <br/>
+                <span class="ignored-method-name">newViewerrormessage30</span>
+                <br/>
+                <span class="ignored-method-name">SelectMyProfileoptionusermenudropdown06</span>
+                <br/>
+                <span class="ignored-method-name">leadSelectView21</span>
+                <br/>
+                <span class="ignored-method-name">selectDeveloperConsole08</span>
+                <br/>
+                <span class="ignored-method-name">createNewContact25</span>
+                <br/>
+                <span class="ignored-method-name">createEditView12</span>
+                <br/>
+                <span class="ignored-method-name">loginErrorMessage01</span>
+                <br/>
+                <span class="ignored-method-name">createNewcontactView26</span>
+                <br/>
+                <span class="ignored-method-name">quaterlySummeryReport19</span>
+                <br/>
+                <span class="ignored-method-name">mySettingfomUserMenu07</span>
+                <br/>
+                <span class="ignored-method-name">oppourtunitiesDropDown15</span>
+                <br/>
+                <span class="ignored-method-name">checkNewbuttonLeadspage24</span>
+                <br/>
+                <span class="ignored-method-name">checkLeadsTab20</span>
+                <br/>
+                <span class="ignored-method-name">forgotPassword4A</span>
+                <br/>
+                <span class="ignored-method-name">blockinganEventCalender36</span>
+                <br/>
+                <span class="ignored-method-name">verifyfnameLnameofuser33</span>
+                <br/>
+                <span class="ignored-method-name">checkRecentlyCreatedView27</span>
+                <br/>
+                <span class="ignored-method-name">logoutFromSalesForce09</span>
+                <br/>
+                <span class="ignored-method-name">selectUsermenuDropDown05</span>
+                <br/>
+                <span class="ignored-method-name">todaysLead23</span>
+                <br/>
+                <span class="ignored-method-name">checkCanecelbuttonCreatenewView31</span>
+                <br/>
+                <span class="ignored-method-name">checkRememberMe03</span>
+                <br/>
+                <span class="ignored-method-name">defaultView22</span>
+                <br/>
+                <span class="ignored-method-name">OppoPipelineReport17</span>
+                <br/>
+                <span class="ignored-method-name">mergeAccounts13</span>
+                <br/>
+                <span class="ignored-method-name">verifyeditLastnameofuser34</span>
+                <br/>
+                <span class="ignored-method-name">checkSaveNewbuttonContact32</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Com.Salesforce.test.tests.AutomationScripts</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setupBeforeTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(edge, public static void Com.Salesforce.test.tests.AutomationScripts.creatNewview11() throws java.la...)</span>
+                <span class="method-start">217 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">creatNewview11</span>
+                <span class="method-start">7116 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">15856 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">teardownAfterTest</span>
+                <span class="method-start">15975 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

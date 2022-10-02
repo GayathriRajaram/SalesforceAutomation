@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite1">
+	<listeners>
+			<listener class-name="Com.Salesforce.test.utility.ReportListner" />
+		</listeners>
+	<test name="ChromeRegression">
+		<parameter name="browsername" value="edge" />
+		<classes>
+			<class name="Com.Salesforce.test.tests.AutomationScripts">
+				<methods>
+					<exclude name="blockinganEventCalender36"></exclude>
+					<exclude name="logoutFromSalesForce09" />
+					<exclude name="loginwithvalidCredentials02" />
+					<exclude name="loginErrorMessage01" />
+					<exclude name="checkRememberMe03" />
+					<exclude name="forgotPassword4A" />
+					<exclude name="wrongCredential4B" />
+					<exclude name="verifyTabcustamization35" />
+					<include name="creatNewview11" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	
+	
+</suite> <!-- Suite -->
