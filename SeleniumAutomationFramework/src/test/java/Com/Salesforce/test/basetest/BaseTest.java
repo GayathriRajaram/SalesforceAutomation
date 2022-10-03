@@ -74,6 +74,7 @@ public class BaseTest {
 		@AfterMethod
 		public static void tearDown() {
 			logger.info("after method execution is started");
+			Takescreeshotofscreenfailed();
 			closeBrowser();
 		}	
 		@AfterTest
@@ -127,7 +128,7 @@ public class BaseTest {
 			report.logTestinfo("current page is refreshed");
 		}
 		
-		public static void entertext(WebElement element, String text,String objname ) {
+		public static void entertext(WebElement element, String text,String objname ) throws Exception {
 			if(element.isDisplayed()) {
 				clearelement( element, objname);
 			     element.sendKeys(text);
@@ -188,7 +189,7 @@ public class BaseTest {
 			report.logTestinfo("Cleared "+objname);
 			
 		}
-		public static void clickelement(WebElement element,String objname) {
+		public static void clickelement(WebElement element,String objname) throws Exception {
 			if (element.isDisplayed()) {
 				element.click();
 				report.logTestinfo("The element "+objname+"  is clicked");
@@ -269,7 +270,7 @@ public class BaseTest {
 			} else
 			   report.logTestfail("Test case Failed");
 		}
-		public static void logout() {
+		public static void logout() throws Exception {
 			driver.findElement(By.cssSelector("#userNavLabel")).click();
 			WebElement logout=driver.findElement(By.linkText("Logout"));
 			clickelement(logout,"logout");
@@ -361,7 +362,7 @@ public class BaseTest {
 			}
 			return dstFile.getAbsolutePath();
 			}
-		public static void Takescreeshotofscreen1() {
+		public static String Takescreeshotofscreenfailed() {
 			File srcfile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		    String filename =  new SimpleDateFormat("yyyyMMddhhmmss'.txt'").format(new Date());
 			File dstFile=new File(System.getProperty("user.dir")+"/screenshots/"+filename+".jpg");
@@ -373,6 +374,7 @@ public class BaseTest {
 				report.logTestinfo("problem occured during take screenshot");
 				
 			}
+			return dstFile.getAbsolutePath();
 		}
 		public static void TakeScreenShotElement1(WebElement element) {
 			File srcfile=element.getScreenshotAs(OutputType.FILE);

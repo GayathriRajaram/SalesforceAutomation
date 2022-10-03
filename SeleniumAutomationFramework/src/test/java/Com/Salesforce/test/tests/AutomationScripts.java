@@ -260,7 +260,7 @@ public class AutomationScripts extends BaseTest {
 		
 	}
 	@Test
-	public static void creatanAccount10(Method m) throws Exception {
+	public static void creatanAccount10() throws Exception {
 		logintosalesforce();
 		WebElement account=driver.findElement(By.linkText("Accounts"));
 		clickelement(account,"account");	

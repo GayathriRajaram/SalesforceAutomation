@@ -1,9 +1,19 @@
 package Com.Salesforce.test.utility;
 
+import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.io.FileHandler;
+import org.testng.ITestContext;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
@@ -46,11 +56,14 @@ public class GenerateReports {
 	public void logTestpassed(String testcaseName) throws IOException {
 		
 		logger.log(Status.PASS,MarkupHelper.createLabel(testcaseName + "is passTest",ExtentColor.GREEN )) ;
-		attachScreeshot(Constants.GENERATE_REPORT_PATH);
+		//attachScreeshot(Constants.GENERATE_REPORT_PATH);
 	}
-	public void logTestfail(String testcaseName) {
+	public void logTestfail(String testcaseName) throws Exception {
 		logger.log(Status.FAIL,MarkupHelper.createLabel(testcaseName  + "is Failed",ExtentColor.RED));
-	}
+		logger.log(Status.FAIL, testcaseName, MediaEntityBuilder.createScreenCaptureFromPath("screen.png").build());
+	
+
+		}
 	public void logTestskip(String testcaseName) {
 		logger.log(Status.SKIP, MarkupHelper.createLabel(testcaseName  +"is skipped ", ExtentColor.BLACK));
 	}
