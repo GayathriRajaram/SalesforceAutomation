@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-18T20:55:56 EDT" name="Default suite" finished-at="2022-10-18T20:56:17 EDT" duration-ms="20534">
+    <groups>
+    </groups>
+    <test started-at="2022-10-18T20:55:56 EDT" name="Default test" finished-at="2022-10-18T20:56:17 EDT" duration-ms="20534">
+      <class name="com.APItest.tests.TekarchAPITestScriptE2E">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.APItest.tests.TekarchAPITestScriptE2E@1a75e76a]" started-at="2022-10-18T20:55:57 EDT" name="setUp" finished-at="2022-10-18T20:55:57 EDT" duration-ms="752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Tekarchlogin_testAPI()[pri:1, instance:com.APItest.tests.TekarchAPITestScriptE2E@1a75e76a]" started-at="2022-10-18T20:55:57 EDT" name="Tekarchlogin_testAPI" finished-at="2022-10-18T20:56:01 EDT" duration-ms="3833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tekarchlogin_testAPI -->
+        <test-method signature="Tekarchgetdata_testAPI()[pri:2, instance:com.APItest.tests.TekarchAPITestScriptE2E@1a75e76a]" started-at="2022-10-18T20:56:01 EDT" name="Tekarchgetdata_testAPI" finished-at="2022-10-18T20:56:15 EDT" duration-ms="13959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tekarchgetdata_testAPI -->
+        <test-method signature="tekarchadd_testAPI()[pri:3, instance:com.APItest.tests.TekarchAPITestScriptE2E@1a75e76a]" started-at="2022-10-18T20:56:15 EDT" name="tekarchadd_testAPI" finished-at="2022-10-18T20:56:16 EDT" duration-ms="590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tekarchadd_testAPI -->
+        <test-method signature="tekarchupdate_testAPI()[pri:4, instance:com.APItest.tests.TekarchAPITestScriptE2E@1a75e76a]" started-at="2022-10-18T20:56:16 EDT" name="tekarchupdate_testAPI" finished-at="2022-10-18T20:56:16 EDT" duration-ms="573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tekarchupdate_testAPI -->
+        <test-method signature="tekarchdelete_testAPI()[pri:5, instance:com.APItest.tests.TekarchAPITestScriptE2E@1a75e76a]" started-at="2022-10-18T20:56:16 EDT" name="tekarchdelete_testAPI" finished-at="2022-10-18T20:56:17 EDT" duration-ms="555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tekarchdelete_testAPI -->
+      </class> <!-- com.APItest.tests.TekarchAPITestScriptE2E -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

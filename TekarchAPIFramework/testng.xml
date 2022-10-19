@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="smokesuite">
+<listeners>
+		<listener
+			class-name="com.APItest.utils.Listerners_API" />
+	</listeners>
+  <test  name="Api-test">
+    <classes>
+      <class name="com.APItest.tests.TekarchAPITestScriptE2E"/>
+    </classes>
+  </test> <!-- Api-test -->
+</suite> <!-- smokesuite -->
+
